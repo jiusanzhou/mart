@@ -11,4 +11,4 @@ CGO_ENABLED=0
 default: build
 
 build:
-	go build --ldflags $(BUILD_LDFLAGS) ./cmd/...
+	go build --ldflags $(BUILD_LDFLAGS) -o dist/mart ./cmd/mart
